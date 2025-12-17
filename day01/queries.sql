@@ -26,6 +26,6 @@ SELECT * FROM movies WHERE Title LIKE "Wall-_"; -- "_" 	Used anywhere in a strin
 
 --Filtering and sorting Query results
 
-SELECT DISTINCT Director FROM movies ORDER BY Director; -- DISTINCTS provides a convenient way to discard rows that have a duplicate column value
+SELECT DISTINCT Director FROM movies; -- DISTINCTS provides a convenient way to discard rows that have a duplicate column value
 SELECT DISTINCT Director FROM movies ORDER BY Director; -- ORDER BY provides a way to sort your results by a given column in ascending or descending order
 SELECT DISTINCT * FROM movies ORDER BY Title ASC LIMIT 5 OFFSET 5; --The LIMIT will reduce the number of rows to return, and the optional OFFSET will specify where to begin counting the number rows from.
