@@ -24,7 +24,7 @@ SELECT * FROM movies WHERE Title = "Toy Story"; -- Case sensitive exact string c
 SELECT * FROM movies WHERE Title LIKE "%Toy Story%"; -- "%"Used anywhere in a string to match a sequence of zero or more characters (only with LIKE or NOT LIKE) (matches "Toy Story 1","Toy Story 2")
 SELECT * FROM movies WHERE Title LIKE "Wall-_"; -- "_" 	Used anywhere in a string to match a single character (only with LIKE or NOT LIKE) (matches "Wall-G" and "Wall-E")
 
---Filtering and sorting Query results
+-- Filtering and sorting Query results
 
 SELECT DISTINCT Director FROM movies; -- DISTINCTS provides a convenient way to discard rows that have a duplicate column value
 SELECT DISTINCT Director FROM movies ORDER BY Director; -- ORDER BY provides a way to sort your results by a given column in ascending or descending order
