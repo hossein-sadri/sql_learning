@@ -19,7 +19,6 @@ SELECT * FROM movies WHERE Id IN(1,2,3,4,5);
 SELECT * FROM movies WHERE Id NOT IN(1,2,3,4,5);
 SELECT * FROM movies WHERE Title LIKE "Toy Story"; -- Case insensitive exact string comparison
 SELECT * FROM movies WHERE Title NOT LIKE "Toy Story"; -- Case insensitive exact string inequality comparison
-SELECT * FROM movies WHERE Title NOT LIKE "Toy Story"; -- Case insensitive exact string inequality comparison
 SELECT * FROM movies WHERE Title = "Toy Story"; -- Case sensitive exact string comparison
 SELECT * FROM movies WHERE Title LIKE "%Toy Story%"; -- "%"Used anywhere in a string to match a sequence of zero or more characters (only with LIKE or NOT LIKE) (matches "Toy Story 1","Toy Story 2")
 SELECT * FROM movies WHERE Title LIKE "Wall-_"; -- "_" 	Used anywhere in a string to match a single character (only with LIKE or NOT LIKE) (matches "Wall-G" and "Wall-E")
